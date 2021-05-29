@@ -13,8 +13,9 @@
 // addSquare();
 
 function toggleState() {
-    console.log("Toggled!");
-    b1.classList.toggle("selected");
+    const id = this.id;
+    console.log(`Toggled square ${id}`);
+    this.classList.toggle("selected");
 }
 
 function addSquare() {
